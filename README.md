@@ -10,7 +10,7 @@ Coming Soon
 Coming Soon
 
 ## Details for teaching team
-Coming Soon
+Coming Soon!
 
 ## Outside code
 * Bootstrap: http://getbootstrap.com/
