@@ -30,7 +30,7 @@ include("logic.php");
         <?php echo $warning; ?>
         <div class="panel col-sm-offset-4 col-sm-4">
             <div class="panel-body">
-                <strong>Change your password and expand your vocabulary with VOCABPASS. This tool is a modified version of the <a href="http://xkcd.com/936/">XKCD Password Generator</a>. The XKCD password generator combines common words into a hard to decipher password.  The VOCABPASS tool also uses this concept but instead pulls from a large dictionary and provides the definitions below of each word.</strong>
+                <strong>Generate a new password while expanding your vocabulary with VOCABPASS. This tool is a modified version of the <a href="http://xkcd.com/936/">XKCD Password Generator</a>. The XKCD password generator combines common words into a hard to decipher password.  The VOCABPASS tool also uses this concept but instead pulls from a large dictionary and provides the definitions below of each word.</strong>
             </div>
         </div>
         <?php echo $finalpassword; ?>
