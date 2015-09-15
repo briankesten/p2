@@ -1,11 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Brian Kestenholz
- * Date: 9/10/2015
- * Time: 6:18 PM
- * Used Bootstrap Template Start Kit
- */
+include("logic.php");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,10 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Brian Kestenholz - CSCI E-15 - Project 2</title>
-
     <!-- Bootstrap -->
+    <link href="css/tooltip-viewport.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,33 +22,108 @@
     <![endif]-->
 </head>
 <body>
-<div class="container">
-
-    <!-- Static navbar -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Project 2:XKCD Style Password Generator</a>
-            </div>
-        </div><!--/.container-fluid -->
-    </nav>
-
+<div class="container-fluid">
     <!-- Main component for a primary marketing message or call to action -->
-    <div class="jumbotron">
-        <h1>Coming Soon</h1>
+        <div class="img-responsive col-sm-offset-4 col-sm-4">
+            <img class="featurette-image img-responsive center-block" src="img/logo-vocabpass.png" alt="Password Generator">
+        </div>
+        <?php echo $warning; ?>
+        <div class="panel col-sm-offset-4 col-sm-4">
+            <div class="panel-body">
+                Generate secure and easy to remember passwords while learning the meanings of new words. VOCABPASS is
+                based on a XCVF Password generation.
+            </div>
+        </div>
+        <?php echo $finalpassword; ?>
+        <div class="container col-sm-offset-4 col-sm-4">
+        <form action="index.php" method="post">
+            <table class="table">
+                <tbody>
+                <tr>
+                    <td>Number of Words</td>
+                    <td>
+                        <select class="form-control" name="wordcount" value="<?php echo $_POST['wordcount']; ?>">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary tooltip-bottom"
+                                title="Select the number of words that you would like in your password">?
+                        </button>
+                        <!-- <button id="tooltip1" type="button" title="This should be shifted to the left" class="btn btn-info pull-right tooltip-bottom">?</button>-->
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Special Character</td>
+                    <td>
+                        <select class="form-control" name="specialcharacter">
+                            <option value="1">None</option>
+                            <option value="2">!</option>
+                            <option value="3">#</option>
+                            <option value="4">?</option>
+                            <option value="5">-</option>
+                            <option value="6">@</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button id="tooltip2" type="button" class="btn btn-primary tooltip-bottom" title="If you would like each word seperated by a special character please choose one">?</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Numeric Prefix</td>
+                    <td>
+                        <select class="form-control" name="addnumericprefix">
+                            <option value="1">No</option>
+                            <option value="2">Yes</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button id="tooltip3" type="button" class="btn btn-primary tooltip-bottom" title="This option will add a number prefix to the beginning of the password">?</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Numeric Suffix</td>
+                    <td>
+                        <select class="form-control" name="addnumericsuffix">
+                            <option value="1">No</option>
+                            <option value="2">Yes</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button id="tooltip4" type="button" class="btn btn-primary tooltip-bottom" title="This option will add a number suffix to the beginning of the password">?</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Capitize First Letter:</td>
+                    <td>
+                        <select class="form-control" name="capitlizefirstletter">
+                            <option value="1">No</option>
+                            <option value="2">Yes</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button id="tooltip4" type="button" class="btn btn-primary tooltip-bottom" title="This option will capitilize the first letter of each word in the password">?</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <p>
+                <button type="submit" class="btn btn-lg btn-primary btn-block">Get Your Password</button>
+            </p>
+        </form>
+            </div>
+        <!-- Build Definition Table  -->
+        <?php echo $definitiontable; ?>
     </div>
-
-</div> <!-- /container -->
-
+<!-- /container -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/tooltip-viewport.js"></script>
 </body>
 </html>
