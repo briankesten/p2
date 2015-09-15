@@ -42,7 +42,7 @@ include("logic.php");
                 <tr>
                     <td>Number of Words</td>
                     <td>
-                        <select class="form-control" name="wordcount" value="<?php echo $_POST['wordcount']; ?>">
+                        <select class="form-control" name="wordcount">
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
@@ -106,7 +106,7 @@ include("logic.php");
                         </select>
                     </td>
                     <td>
-                        <button id="tooltip4" type="button" class="btn btn-primary tooltip-bottom" title="This option will capitilize the first letter of each word in the password">?</button>
+                        <button id="tooltip5" type="button" class="btn btn-primary tooltip-bottom" title="This option will capitilize the first letter of each word in the password">?</button>
                     </td>
                 </tr>
                 </tbody>
