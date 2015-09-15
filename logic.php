@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             //Define HTML Table To Show Definitions. Only echo if input is valid
             $definitiontable = "
                    <div class=\"page-header  col-sm-offset-4 col-sm-4\">
-                      <h2>Password Word Definitions</h2>
+                      <h2>Definitions</h2>
                    </div>
                    <div class=\"container col-sm-offset-4 col-sm-4\">
                    <table class=\"table\">

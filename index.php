@@ -30,8 +30,7 @@ include("logic.php");
         <?php echo $warning; ?>
         <div class="panel col-sm-offset-4 col-sm-4">
             <div class="panel-body">
-                Generate secure and easy to remember passwords while learning the meanings of new words. VOCABPASS is
-                based on a XCVF Password generation.
+                <strong>Change your password and expand your vocabulary with VOCABPASS. This tool is a modified version of the <a href="http://xkcd.com/936/">XKCD Password Generator</a>. The XKCD password generator combines common words into a hard to decipher password.  The VOCABPASS tool also uses this concept but instead pulls from a large dictionary and provides the definitions below of each word.</strong>
             </div>
         </div>
         <?php echo $finalpassword; ?>
@@ -94,7 +93,7 @@ include("logic.php");
                         </select>
                     </td>
                     <td>
-                        <button id="tooltip4" type="button" class="btn btn-primary tooltip-bottom" title="This option will add a number suffix to the beginning of the password">?</button>
+                        <button id="tooltip4" type="button" class="btn btn-primary tooltip-bottom" title="This option will add a number suffix to the end of the password">?</button>
                     </td>
                 </tr>
                 <tr>
