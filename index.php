@@ -97,7 +97,7 @@ include("logic.php");
                     </td>
                 </tr>
                 <tr>
-                    <td>Capitize First Letter:</td>
+                    <td>Capitalize First Letter:</td>
                     <td>
                         <select class="form-control" name="capitlizefirstletter">
                             <option value="1">No</option>
