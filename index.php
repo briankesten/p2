@@ -105,7 +105,7 @@ include("logic.php");
                         </select>
                     </td>
                     <td>
-                        <button id="tooltip5" type="button" class="btn btn-primary tooltip-bottom" title="This option will capitilize the first letter of each word in the password">?</button>
+                        <button id="tooltip5" type="button" class="btn btn-primary tooltip-bottom" title="This option will capitalize the first letter of each word in the password">?</button>
                     </td>
                 </tr>
                 </tbody>
