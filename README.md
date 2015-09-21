@@ -16,7 +16,7 @@ briankesten@yahoo.com
 VOCABPASS: Generate a new password while expanding your vocabulary with VOCABPASS. This tool is a modified version of the XKCD Password Generator. The XKCD password generator combines common words into a hard to decipher password. The VOCABPASS tool also uses this concept but instead pulls from a large dictionary and provides the definitions below of each word.
 
 ## Screencast Demo
-http://p2.netcaredata.com
+<http://screencast.com/t/kteJLcOSiI>
 
 ## Details for teaching team
 * Utilizes a MySQL WordNet dictionary
